@@ -1,0 +1,25 @@
+{
+  "name": "cyberlab-tests",
+  "version": "1.0.0",
+  "description": "Repositório com todos os arquivos de testes do projeto CyberLab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuschaves/cyberlab-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateuschaves/cyberlab-tests/issues"
+  },
+  "homepage": "https://github.com/mateuschaves/cyberlab-tests#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "data-collection": "^1.1.6",
+    "signale": "^1.2.1",
+    "v8n": "^1.0.2"
+  }
+}
