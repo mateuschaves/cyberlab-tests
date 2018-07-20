@@ -26,9 +26,6 @@ await axios.post('http://localhost:3333/register', {
 
 
 
-
-
-
 /*
         TESTE DE AUTENTICAÇÃO DE USUÁRIO
 */
