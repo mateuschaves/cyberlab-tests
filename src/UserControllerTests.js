@@ -8,8 +8,8 @@ axios.defaults.headers.common['Authorization'] = TOKEN;
     /*
                 Teste show user
     */
-    async show(){
-      await axios.get('http://localhost:3333/users/2',{
+    async function show(){
+      await axios.get('http://localhost:3333/users/1',{
           'Access-Control-Allow-Origin': "*"
       }).then(function(response){
           const data = response.data.user[0];
@@ -29,8 +29,8 @@ axios.defaults.headers.common['Authorization'] = TOKEN;
     /*
                 Teste Delete user
     */
-   async delete(){
-     await axios.delete('http://localhost:3333/users/2/delete',{
+   async function destroy(){
+     await axios.delete('http://localhost:3333/users/1/delete',{
           'Access-Control-Allow-Origin': "*"
       }).then(function(response){
           if(response.status == 200 && response.data.message){
