@@ -2,7 +2,7 @@ const axios = require('axios');
 const signale = require('signale');
 
     /*
-        TESTE DE REGISTRO DE USUÁRIO
+        Teste register user
     */
     async function register(){
        axios.post('http://localhost:3333/register', {
@@ -28,7 +28,7 @@ const signale = require('signale');
     }
 
     /*
-        TESTE DE AUTENTICAÇÃO DE USUÁRIO
+        Teste auth user
     */
     async function auth(){
        axios.post('http://localhost:3333/auth', {

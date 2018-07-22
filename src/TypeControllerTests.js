@@ -5,7 +5,7 @@ const TOKEN  = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6
 axios.defaults.headers.common['Authorization'] = TOKEN;
 
     /*
-                Teste show user
+                Teste show typecontroller
     */
     async show(){
 
@@ -25,7 +25,7 @@ axios.defaults.headers.common['Authorization'] = TOKEN;
     }
 
     /*
-                Teste Delete user
+                Teste delete typecontroller
     */
    async delete(){
 
