@@ -11,7 +11,7 @@ axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
                 Teste show user
     */
    for(var i = 0; i < QTN; i++){
-        const id = casual.integer(from = 1, to = 3);
+        const id = casual.integer(from = 1, to = 211);
         axios.get('http://cyberlab-com.umbler.net/users/' + id,{
             'Access-Control-Allow-Origin': "*"
         }).then(function(response){
@@ -19,9 +19,9 @@ axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
             if(response.status == 200){
                 signale.success('Show user '+id+' bem sucedido !');
             }else{
-                signale.error('Show user falhou ! !')
+                signale.error('Show user '+id+' falhou ! !')
             }
         }).catch(function(error){
-            signale.error('Show user falhou ! - ' + error.message);
+            signale.error('Show user '+id+' falhou ! - ' + error.message);
         });
    }
