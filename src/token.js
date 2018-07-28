@@ -1,0 +1,1 @@
+module.exports = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTUzMjczNDI1Mn0.kQjJTO60WsPV8ad8Fbt3ooRW4Vl5_cs99SRZ2qFWuqs'; 

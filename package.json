@@ -18,7 +18,9 @@
   "homepage": "https://github.com/mateuschaves/cyberlab-tests#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "casual": "^1.5.19",
     "data-collection": "^1.1.6",
+    "moment": "^2.22.2",
     "signale": "^1.2.1",
     "v8n": "^1.0.2"
   }
