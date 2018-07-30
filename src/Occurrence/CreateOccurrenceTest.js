@@ -9,8 +9,9 @@ const QTN = 10;
 
 axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
 
-for(var i = 0; i < QTN; i++){
-    const data = {
+
+async function store(){
+    axios.post('http://cyberlab-com.umbler.net/occurrence/store',{
         year: casual.year,
         month: casual.month_number,
         day: casual.day_of_month,
@@ -20,8 +21,7 @@ for(var i = 0; i < QTN; i++){
         neighborhood: casual.word,
         city: casual.city,
         state: casual.state
-     }
-    axios.post('http://cyberlab-com.umbler.net/occurrence/store',data,
+     },
           {
               'Access-Control-Allow-Origin': "*"
           }).then(function(response){
@@ -31,4 +31,9 @@ for(var i = 0; i < QTN; i++){
           }).catch(function(error){
               signale.error('Create occurrence falhou ! - ' + error.response.data.message + ' ' + error.message);
     });
+}
+    
+
+for(var i = 0; i < QTN; i++){
+    store()
 }
